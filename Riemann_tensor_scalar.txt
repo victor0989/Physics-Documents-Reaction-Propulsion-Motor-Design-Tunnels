@@ -1,0 +1,32 @@
+import sympy as sp
+
+# Definición de coordenadas y métrica para un espacio-tiempo de 4 dimensiones
+t, x, y, z = sp.symbols('t x y z')
+g = sp.Matrix([[sp.Function('g00')(t, x, y, z), 0, 0, 0],
+               [0, sp.Function('g11')(t, x, y, z), 0, 0],
+               [0, 0, sp.Function('g22')(t, x, y, z), 0],
+               [0, 0, 0, sp.Function('g33')(t, x, y, z)]])
+
+# Cálculo de la inversa de la métrica
+g_inv = g.inv()
+
+# Cálculo de los símbolos de Christoffel
+n = len(g)
+christoffel = [[[(1/2) * sum(g_inv[i, s] * (sp.diff(g[s, j], k) + sp.diff(g[s, k], j) - sp.diff(g[j, k], s))
+                for s in range(n)) for k in range(n)] for j in range(n)] for i in range(n)]
+
+# Cálculo del tensor de Riemann
+riemann = [[[[sp.simplify(sp.diff(christoffel[i][j][k], l) - sp.diff(christoffel[i][j][l], k)
+               + sum(christoffel[i][s][k] * christoffel[s][j][l] - christoffel[i][s][l] * christoffel[s][j][k]
+                     for s in range(n))) for l in range(n)] for k in range(n)] for j in range(n)] for i in range(n)]
+
+# Guardar en un archivo de texto
+with open("riemann_tensors.txt", "w") as file:
+    file.write("Tensor de Riemann en coordenadas generales:\n")
+    for i in range(n):
+        for j in range(n):
+            for k in range(n):
+                for l in range(n):
+                    file.write(f"Riemann[{i}][{j}][{k}][{l}] = {riemann[i][j][k][l]}\n")
+
+print("Archivo generado: riemann_tensors.txt")
