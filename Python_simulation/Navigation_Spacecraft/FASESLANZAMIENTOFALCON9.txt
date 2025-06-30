@@ -1,0 +1,55 @@
+--------------------------------------------------------------------------------
+                          FALCON 9 - SECUENCIA DE LANZAMIENTO
+--------------------------------------------------------------------------------
+
+ETAPA 1 - DESPEGUE Y ASCENSO INICIAL
+--------------------------------------------------------------------------------
+[00:00:00] Encendido de motores Merlin (9x) en primera etapa.
+[00:00:02] Confirmación de empuje nominal.
+[00:00:03] Liberación de clamps en la plataforma de lanzamiento.
+[00:00:05] Despegue.
+
+[+01:00] Superación de la velocidad supersónica (Max-Q).
+[+02:30] MECO - Apagado de motores principales (Main Engine Cut-Off).
+
+ETAPA 2 - SEPARACIÓN Y ENCENDIDO EN ÓRBITA
+--------------------------------------------------------------------------------
+[+02:32] Separación de la primera etapa.
+[+02:36] Encendido del motor Merlin Vacuum (Segunda etapa).
+[+02:45] Separación del carenado (protección de carga útil).
+
+[+08:50] SECO - Segundo apagado del motor de la segunda etapa.
+[+09:00] Estabilización orbital alcanzada.
+
+ETAPA 3 - DESACOPLAMIENTO Y PROPULSIÓN EN EL ESPACIO
+--------------------------------------------------------------------------------
+[+09:30] Separación de la carga útil (satélite, cápsula Dragon, etc.)
+
+--- Si la carga es un satélite ---
+[+09:32] Activación de sistemas autónomos.
+[+09:35] Despliegue de paneles solares.
+[+09:40] Encendido de propulsores de corrección orbital.
+
+--- Si la carga es Dragon ---
+[+10:00] Comprobación de sistemas de navegación y soporte vital.
+[+10:30] Maniobras de aproximación a estación espacial (si aplica).
+
+ETAPA FINAL - DISPOSICIÓN DE LA SEGUNDA ETAPA
+--------------------------------------------------------------------------------
+[+15:00] Desorbita la segunda etapa (si es posible).
+         - Entra a la atmósfera terrestre.
+         - Se quema controladamente o cae en zona segura.
+
+Ó FIN DEL LANZAMIENTO Ó
+--------------------------------------------------------------------------------
+
+1. Plasma Injector (VASIMR Nozzle)
+2. Ionization Chamber
+3. Magnetic Containment Coils
+4. Gravity Manipulation Core
+5. Micro Black Hole Reactor
+6. Power Distribution Array
+7. Thermal Radiation Shields
+8. Navigation Control Unit
+9. Fusion Pre-Stabilizer
+10. Quantum Field Stabilizer
